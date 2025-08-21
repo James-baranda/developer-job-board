@@ -1,18 +1,9 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "framework": "nextjs",
+  "buildCommand": "npm run build",
   "functions": {
     "app/api/**/*.ts": {
       "runtime": "nodejs18.x"
     }
-  },
-  "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
-    "JWT_SECRET": "@jwt_secret",
-    "NEXT_PUBLIC_EMAILJS_SERVICE_ID": "@emailjs_service_id",
-    "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID": "@emailjs_template_id",
-    "NEXT_PUBLIC_EMAILJS_USER_ID": "@emailjs_user_id"
   }
 }
